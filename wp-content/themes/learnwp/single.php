@@ -7,6 +7,17 @@
 				while(have_posts()):
 					the_post();
 					get_template_part('template-parts/content', 'single');
+			?>
+				<div class="row">
+					<div class="pages col-6 text-left"><?php next_post_link('&laquo; %link'); ?></div>
+					<div class="pages col-6 text-right"><?php previous_post_link('%link &laquo;'); ?></div>
+				</div>
+			<?php		
+
+					if(comments_open() || get_comments_number()):
+						comments_template('/my-comments.php');
+					endif;
+
 				endwhile;
 			?>
 		</div>
