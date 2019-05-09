@@ -3,7 +3,7 @@
 <main>
 	<section class="slide">
 		<div class="container">
-			<div class="row">Slide</div>
+			<div class="row"><?php motoPressSlider( "home-slider" ); ?></div>
 		</div>
 	</section>
 	<section class="services">
@@ -107,9 +107,12 @@
 		</div>
 	</section>
 	<section class="map">
-		<div class="container">
-			<div class="row">Map</div>
-		</div>				
+		<iframe
+		  width="100%"
+		  height="350"
+		  frameborder="0" style="border:0"
+		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAWpPc5av59zvdmAiLqTuJySHSwaJ6qGc4&q=Space+Needle,Seattle+WA&zoom=15" allowfullscreen>
+	</iframe>				
 	</section>
 </main>
 </div>
