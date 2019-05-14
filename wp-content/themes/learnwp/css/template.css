@@ -16,6 +16,14 @@ h4{ font-size: 18px; margin-top: 0; }
 .social-media-icons ul{ padding: 0; margin: 0;}
 .social-media-icons ul li { list-style-type: none; display: inline; margin: 0 5px 0; }
 
+/* Top Bar - Search */
+.search input[type="search"]{ color: #989898; background: #ededed; border: 0; padding: 3px 10px; }
+.search button{ background: #000; border: 0; color: #fff; padding: 3px 10px 4px; margin-left: -4px; }
+.search label{ margin: 0; }
+
+/* Header - Logo */
+.align{ display: flex; align-items: center; width: 100%; }
+
 /* Header - Main Menu */
 .menu-area{ background: #f3f3f3; padding: 15px 0; }
 .main-menu ul{ list-style: none; padding: 0; margin: 0; font-size: 28px; }

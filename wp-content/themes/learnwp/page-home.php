@@ -8,7 +8,7 @@
 	</section>
 	<section class="services">
 		<div class="container">
-			<h1>Our Services</h1>
+			<h1><?php _e('Our Services', 'learnwp' ); ?></h1>
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="services-item">
@@ -48,7 +48,7 @@
 	</section>
 	<section class="middle-area">
 		<div class="container">
-			<h1>Latest News</h1>
+			<h1><?php _e('Latest News', 'learnwp' );?></h1>
 			<div class="row">
 				<aside class="sidebar col-md-4 h-100">
 
@@ -108,11 +108,15 @@
 		</div>
 	</section>
 	<section class="map">
+		<?php 
+		$key = get_theme_mod('set_map_apikey');
+		$address = urlencode(get_theme_mod('set_map_address'));
+		?>
 		<iframe
 		  width="100%"
 		  height="350"
 		  frameborder="0" style="border:0"
-		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAWpPc5av59zvdmAiLqTuJySHSwaJ6qGc4&q=Space+Needle,Seattle+WA&zoom=15" allowfullscreen>
+		  src="https://www.google.com/maps/embed/v1/place?key=<?php echo $key; ?>&q=<?php echo $address; ?>&zoom=15" allowfullscreen>
 	</iframe>				
 	</section>
 </main>

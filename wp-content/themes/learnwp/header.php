@@ -24,14 +24,14 @@
 		</section>
 		<section class="menu-area">
 			<div class="container">
-				<div class="align">
 					<div class="row">
-						<section class="logo col-md-2 col-sm-12 col-12 text-center">Logo</section>
-						<nav class="main-menu col-md-10 text-right">
-							<?php wp_nav_menu( array( 'theme_location' => 'my_main_menu' ) ); ?>
-						</nav>					
+						<div class="align">
+							<section class="logo col-md-2 col-sm-12 col-12 text-center"><?php the_custom_logo(); ?></section>
+							<nav class="main-menu col-md-10 text-right">
+								<?php wp_nav_menu( array( 'theme_location' => 'my_main_menu' ) ); ?>
+							</nav>
+						</div>					
 					</div>					
-				</div>
 			</div>				
 		</section>
 	</header>
